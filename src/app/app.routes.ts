@@ -5,6 +5,7 @@ import { ComponentInputExampleComponent } from './components/component-input-exa
 import { ForDirectiveExampleComponent } from './components/for-directive-example/for-directive-example.component';
 import { SimpleDatatableComponent } from './components/simple-datatable/simple-datatable.component';
 import { SimplyDatatableExampleComponent } from './components/simply-datatable-example/simply-datatable-example.component';
+import { ComponentOutputExampleComponent } from './components/component-output-example/component-output-example.component';
 
 export const routes: Routes = [
     {path: 'event-bind-example', component:EventBindExampleComponent},
@@ -13,6 +14,7 @@ export const routes: Routes = [
         {path:" ", component: WelcomeComponent},
         {path:'for-directive-example', component:ForDirectiveExampleComponent},
         {path:"component-input-example", component: ComponentInputExampleComponent},
-        {path:'simply-datatable-example',component:SimplyDatatableExampleComponent}
+        {path:'simply-datatable-example',component:SimplyDatatableExampleComponent},
+        {path:'component-output-example',component:ComponentOutputExampleComponent}
 
 ];
