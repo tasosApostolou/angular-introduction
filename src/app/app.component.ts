@@ -9,11 +9,10 @@ import { ListGroupMenuComponent } from './components/list-group-menu/list-group-
 @Component({
   selector: 'app-root',
   standalone: true,
-  // PersonTableComponent,
-  //EventBindExampleComponent
   imports: [RouterLink,
-    RouterOutlet, ListGroupMenuComponent
-   ],
+    RouterOutlet,
+    PersonTableComponent,
+    ListGroupMenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
