@@ -73,6 +73,40 @@
 - Στο αρχείο `app.routes.ts` ο πίνακας `routes` περιέχει αντικείμενα που είναι ο κατάλογος των path που εμφανίζονται στο μενού της εφαρμογής μαζί με το Angular component που αντιστοιχεί στο path.
  
   ```typescript
+
+  ## Βήμα 10: Angular Material
+ 
+- Εγκατάσταση του Angular Material και του Angular CDK:
+ 
+  ```bash
+  ❯ ng add @angular/material
+  ℹ Using package manager: npm
+  ✔ Found compatible package version: @angular/material@17.3.2.
+  ✔ Package information loaded.
+ 
+  The package @angular/material@17.3.2 will be installed and executed.
+  Would you like to proceed? Yes
+  ✔ Packages successfully installed.
+  ? Choose a prebuilt theme name, or "custom" for a custom theme: Indigo/Pink        [ Preview:
+https://material.angular.io?theme=indigo-pink ]
+  ? Set up global Angular Material typography styles? No
+  ? Include the Angular animations module? Include and enable animations
+  UPDATE package.json (1396 bytes)
+  ✔ Packages installed successfully.
+  UPDATE src/app/app.config.ts (338 bytes)
+  UPDATE angular.json (3652 bytes)
+  UPDATE src/index.html (516 bytes)
+  UPDATE src/styles.css (181 bytes)
+  ```
+ 
+- Επέμβαση στο `PersonTableComponent` για να χειρίζεται δεδομένα είτε `Person` είτε `EPerson`.
+- Επέμβαση στο `ComponentOutputExampleComponent` και αντικατάσταση του `alert` με το `dialog` του Angular Material (https://t.ly/JLFka).
+Angular Material
+UI component infrastructure and Material Design components for Angular web applications.
+material.angular.io
+έχει μενού περιβάλλοντος
+
+
   import { Routes } from "@angular/router";
   import { EventBindExampleComponent } from "src/app/components/event-bind-example/event-bind-example.component";
   import { WelcomeComponent } from "./components/welcome/welcome.component";
